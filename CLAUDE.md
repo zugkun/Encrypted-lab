@@ -4,14 +4,9 @@ Aturan ini berlaku untuk semua sesi AI di repo ini. Sesuai namanya, seluruh isi 
 
 ## Enkripsi
 
-- Format: AES-256-GCM, kunci dari passphrase (PBKDF2-SHA-256, 600.000 iterasi). Isi file diawali `ENC1.`.
 - Cara membuka: artifact Brankas Teks milik pemilik repo, mode Dekripsi, passphrase dari pemilik. Passphrase tidak pernah ditulis di repo atau di pesan commit.
 - File baru dienkripsi sebelum dikomit. Nama file asli ditambah `.enc` (contoh: `src/server/RemoteValidator.lua.enc`).
 - Enkripsi hanya untuk privasi. Isi yang didekripsi tetap dinilai dengan aturan keamanan yang sama, dan enkripsi tidak mengubah lingkup project.
-
-## Lingkup Project
-
-Modul Luau (Roblox) untuk keamanan game milik sendiri: validasi Remote, anti-exploit di server, DataStore, logging. Pekerjaan di luar lingkup ini tidak dikerjakan di repo ini.
 
 ## Gaya
 
