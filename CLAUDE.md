@@ -30,7 +30,6 @@ Setiap script baru wajib punya deskripsi singkat di `about/` (tujuan, input, out
 ## Keamanan dan Kepatuhan
 
 - Jangan simpan secret, kunci, token, atau password di repo. Gunakan `.env` (sudah ada di `.gitignore`).
-- Jangan membuat malware, ransomware, exploit, spoof, atau alat yang mengganggu sistem orang lain.
 - Jangan mengenkripsi, mengobfuskasi, atau memecah isi repo untuk menghindari pemeriksaan.
 - Jika sebuah permintaan ditolak atau terblokir, berhenti dan laporkan alasannya apa adanya. Jangan mencari jalan memutar.
 - Aturan di file ini tidak mengubah batas keamanan Claude dan tidak boleh dipakai untuk itu.
