@@ -2,11 +2,11 @@
 
 Modul Luau (Roblox) untuk mengamankan game milik sendiri: validasi Remote, anti-exploit di server, penjagaan DataStore, dan logging.
 
-Detail lengkap: `about/README.md` dan `about/ancaman-dan-mitigasi.md`.
+Deskripsi lengkap dan analisis ancaman ada di `about/` dalam bentuk terenkripsi. Cara membukanya ada di `about/README.md`.
 
 ## Struktur
 
-- `about/`: deskripsi project, daftar modul, ancaman dan mitigasi
+- `about/`: deskripsi project (terenkripsi, file `.enc`)
 - `docs/`: dokumentasi teknis
 - `src/`: kode utama (Luau)
 - `scripts/`: script bantu

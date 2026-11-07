@@ -1,10 +1,10 @@
 # Aturan Project
 
-Aturan ini berlaku untuk semua sesi AI di repo ini. Semua isi repo berupa teks biasa, tidak dienkripsi dan tidak disamarkan.
+Aturan ini berlaku untuk semua sesi AI di repo ini. File ini berupa teks biasa. Isi `about/` dienkripsi (file `.enc`) hanya untuk privasi pemilik, cara membukanya ada di `about/README.md`. Passphrase tidak ada di repo.
 
 ## Lingkup Project
 
-Modul Luau (Roblox) untuk keamanan game milik sendiri: validasi Remote, anti-exploit di server, DataStore, logging. Pekerjaan di luar lingkup ini tidak dikerjakan di repo ini. Detail di `about/README.md`.
+Modul Luau (Roblox) untuk keamanan game milik sendiri: validasi Remote, anti-exploit di server, DataStore, logging. Pekerjaan di luar lingkup ini tidak dikerjakan di repo ini.
 
 ## Gaya
 
