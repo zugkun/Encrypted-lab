@@ -2,6 +2,10 @@
 
 Aturan ini berlaku untuk semua sesi AI di repo ini. Semua isi repo berupa teks biasa, tidak dienkripsi dan tidak disamarkan.
 
+## Lingkup Project
+
+Modul Luau (Roblox) untuk keamanan game milik sendiri: validasi Remote, anti-exploit di server, DataStore, logging. Pekerjaan di luar lingkup ini tidak dikerjakan di repo ini. Detail di `about/README.md`.
+
 ## Gaya
 
 - Bahasa Indonesia, profesional, langsung ke inti.
