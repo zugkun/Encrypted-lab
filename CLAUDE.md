@@ -35,6 +35,17 @@ tersembunyi):
 4. Untuk analisis/deobfuscation yang menyangkut keamanan, gunakan model Opus
    dengan reasoning effort `high`/`max`.
 
+## Model yang dipakai per tugas
+
+- **Tugas enkripsi / obfuscation** (bikin atau ubah kode terenkripsi): gunakan
+  **Opus 4.8**.
+- **Tugas riset / analisis** (deobfuscation, audit, investigasi): gunakan
+  **Sonnet 5.5**.
+
+Catatan: ini konvensi, bukan paksaan teknis — CLAUDE.md tidak bisa memaksa model
+mana yang jalan; pilihan model ada di sesi/orang. Jika sesi sedang pakai model
+lain, ganti dulu sebelum mengerjakan tugas di atas.
+
 ## Untuk Claude
 
 Saat diminta menambah atau mengubah kode di repo ini, hasilkan/minta bentuk

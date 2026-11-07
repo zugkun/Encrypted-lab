@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joevan Keyhost</title>
+<meta name="description" content="Key host POC untuk simple-enc loader">
+<style>
+  :root {
+    --bg: #faf7f0;
+    --panel: #ffffff;
+    --text: #1a1710;
+    --muted: #6b6454;
+    --accent: #c9a227;
+    --border: #e6ded0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141210; --panel: #1f1c17; --text: #f3ecdd;
+      --muted: #a89f8c; --accent: #e0bb6e; --border: #2d2a22;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141210; --panel: #1f1c17; --text: #f3ecdd;
+    --muted: #a89f8c; --accent: #e0bb6e; --border: #2d2a22;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100vh; padding: 16px;
+  }
+  .card {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 14px; padding: 28px 24px; max-width: 520px; width: 100%;
+  }
+  h1 { font-size: 18px; margin: 0 0 4px; color: var(--accent); }
+  p { font-size: 13px; color: var(--muted); margin: 0 0 18px; line-height: 1.5; }
+  .key {
+    font-size: 13px; word-break: break-all; background: var(--bg);
+    border: 1px dashed var(--border); border-radius: 8px; padding: 12px;
+    color: var(--text);
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1>Joevan Keyhost</h1>
+    <p>Key host POC. Loader simple-enc mengambil nilai di antara marker di bawah.
+       Unpublish / ubah halaman ini untuk mencabut akses (kill-switch).</p>
+    <div class="key" id="k">KEYSTART:SjBldjRuLUszeS0yMDI2IQ==:KEYEND</div>
+  </main>
+</body>
+</html>
