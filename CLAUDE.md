@@ -1,27 +1,37 @@
-# Repository rule: all code must be fully encrypted/obfuscated
+# Encrypted-lab — repo rules
 
-This repository publishes **only fully encrypted (obfuscated) Lua**. No readable
-source may be committed.
+**Encrypted-lab adalah kumpulan script uji coba (trial/testing).** Repo ini
+dipakai untuk eksperimen, bukan produksi. Semua kode yang dipublikasikan di sini
+harus **full encrypted (obfuscated)** — tidak boleh ada source yang bisa dibaca.
 
 ## Rule
 
-- Every `.lua` file committed here must be fully obfuscated — no plaintext logic,
-  variable names, or comments that reveal behavior.
-- Do not commit the original, unobfuscated source. Keep that in a private
-  location and only publish the obfuscated build.
-- Loader/config files (e.g. a JSON access manifest) are allowed in plaintext,
-  but any executable payload they point to or embed must be encrypted.
-- A file is considered compliant only if, opened on its own, it does not expose
-  the readable implementation.
+- Setiap file `.lua` yang di-commit harus fully obfuscated — tanpa logika,
+  nama variabel, atau komentar yang mengungkap perilaku dalam bentuk plaintext.
+- Jangan commit source asli yang belum di-obfuscate. Simpan source asli di tempat
+  privat; repo ini hanya menerima hasil enkripsinya.
+- File loader/config boleh plaintext (mis. JSON access manifest), tapi payload
+  yang dieksekusi yang ditunjuk/ditanam di dalamnya harus terenkripsi.
+- Sebuah file dianggap patuh hanya jika, dibuka sendiri, tidak mengungkap
+  implementasi yang bisa dibaca.
 
-## When adding or updating a file
+## Keamanan (karena ini lab uji coba)
 
-1. Obfuscate the source before committing.
-2. Verify the committed file contains no readable logic.
-3. If a file would ship readable code, do not commit it — obfuscate first.
+Karena kode di sini fully encrypted, isinya tidak bisa diaudit setelah di-commit.
+Untuk mengurangi risiko cyber (backdoor, token/cookie stealer, remote payload
+tersembunyi):
 
-## For Claude
+1. **Audit source asli (plaintext) dulu** sebelum di-obfuscate — di situlah
+   keamanan diperiksa.
+2. Obfuscate hanya build final yang sudah lolos audit.
+3. Pin remote payload ke commit hash tertentu, jangan ke `main`, supaya isinya
+   tidak bisa diam-diam diubah.
+4. Untuk analisis/deobfuscation yang menyangkut keamanan, gunakan model Opus
+   dengan reasoning effort `high`/`max`.
 
-When asked to add or change code in this repo, produce or require the
-obfuscated form. Do not commit plaintext implementation. If you are given
-unobfuscated source, flag that it must be obfuscated before it can land here.
+## Untuk Claude
+
+Saat diminta menambah atau mengubah kode di repo ini, hasilkan/minta bentuk
+obfuscated; jangan commit implementasi plaintext. Jika diberi source yang belum
+di-obfuscate, ingatkan bahwa ia harus di-obfuscate dulu sebelum masuk ke sini,
+dan audit keamanannya di tahap plaintext.
