@@ -1,5 +1,11 @@
 # Encrypted-lab — repo rules
 
+## ⚠️ PALING PENTING: hanya repo ini
+
+**Kerjakan HANYA di repo `zugkun/Encrypted-lab`. JANGAN menyentuh repo lain
+sama sekali** — tidak membaca untuk mengubah, tidak meng-commit, tidak push,
+tidak membuat PR di repo lain mana pun. Semua perubahan terbatas pada repo ini.
+
 **Encrypted-lab adalah kumpulan script uji coba (trial/testing).** Repo ini
 dipakai untuk eksperimen, bukan produksi. Semua kode yang dipublikasikan di sini
 harus **full encrypted (obfuscated)** — tidak boleh ada source yang bisa dibaca.
